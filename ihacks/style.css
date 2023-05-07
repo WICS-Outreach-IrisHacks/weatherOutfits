@@ -1,0 +1,79 @@
+body {
+    display: grid;
+}
+
+h1 {
+    margin: 0;
+}
+
+.weather {
+    display: grid;
+    place-content: center;
+    color: hsl(234, 45%, 32%);
+}
+
+.feel {
+    display: grid;
+    place-content: center;
+    color: hsl(234, 45%, 32%);
+}
+
+.min {
+    display: grid;
+    place-content: center;
+    color: hsl(234, 45%, 32%);
+}
+
+.max {
+    display: grid;
+    place-content: center;
+    color: hsl(234, 45%, 32%);
+}
+
+.buttongrp button {
+    background-color: #ed81d2;
+    border: 1px solid rgb(233, 42, 74);
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+}
+
+.buttongrp button:not(:last-child) {
+    border-right: none;
+}
+
+.buttongrp:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.buttongrp button:hover {
+    background-color: pink;
+}
+
+
+#bottom {
+    height: 700px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+#bottom div {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+}
+
+.weather {
+    grid-row-start: span 2;
+}
+
+.outfits {
+    grid-row-start: span 1;
+}
